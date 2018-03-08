@@ -8,12 +8,12 @@ The conversion is done using an XSLT file. Different XSLT files will produce dif
 
 ### Simple HTML Output
 
-This outputs a single HTML 5 file with embedded CSS information. There is no JavaScript functionality.
+This outputs a single HTML 5 file with embedded CSS information. There is no JavaScript functionality. An example output is in the `examples/simple.html` file.
 
 Here is how to use it with `xsltproc`.
 
 ```sh
-$ xsltproc testng2html.xsl input.xml < output.html
+$ xsltproc simple.xsl input.xml > simple.html
 ```
 
 ## License

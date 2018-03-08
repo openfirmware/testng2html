@@ -1,0 +1,2407 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TestNG Results</title>
+<style>
+        body {
+          background-color: #999;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+          font-family: sans-serif;
+        }
+
+        body > div {
+          margin: 0 auto;
+          max-width: 960px;
+          background-color: #FFF;
+          padding: 1em;
+        }
+
+        table {
+          border-spacing: 0;
+          border: 0;
+        }
+
+        table th, table td {
+          padding: 0.2em 0.5em;
+        }
+
+        table.test-results {
+          width: 100%;
+        }
+
+        table.test-results td {
+          text-align: right;
+        }
+
+        table.test-results col.passed {
+          background-color: GreenYellow;
+        }
+
+        table.test-results col.failed {
+          background-color: LightCoral;
+        }
+
+        table.test-results col.skipped {
+          background-color: LightYellow;
+        }
+
+        table.test-results col.total {
+          background-color: LightSteelBlue;
+        }
+
+        table.timings {
+          font-size: 0.8em;
+          width: 50%;
+        }
+
+        table.timings td {
+          text-align: right;
+        }
+
+        div.test {
+          padding: 1em;
+          background-color: #EEE;
+          border-bottom: 1px solid #000;
+        }
+
+        div.test-class {
+          padding: 1em;
+          margin-bottom: 1em;
+          background-color: #FAFAFA;
+          border-bottom: 1px solid #000;
+        }
+
+        div.test-method {
+          padding: 1em;
+          margin-bottom: 1em;
+          background-color: #FDFDFD;
+          border-bottom: 1px solid #000;
+        }
+
+        div.test-method.PASS {
+          background-color: #EAFDEA;
+        }
+
+        div.test-method.FAIL {
+          background-color: #FDEAEA;
+        }
+
+        div.test-method.SKIP {
+          background-color: #FDFDEA;
+        }
+
+        .signature {
+          font-size: 0.8em;
+          font-family: monospace;
+          color: #555;
+        }
+
+        table.parameters td {
+          font-family: monospace;
+        }
+
+        div.exception {
+          margin: 1em 0;
+          padding: 1em;
+          border: 3px solid red;
+        }
+
+        .exception-class {
+          font-family: monospace;
+        }
+      </style>
+</head>
+<body>
+<div id="master">
+<h1>TestNG Results</h1>
+<table class="test-results">
+<colgroup>
+<col class="passed">
+<col class="failed">
+<col class="skipped">
+<col class="total">
+</colgroup>
+<thead><tr>
+<th>Passed</th>
+<th>Failed</th>
+<th>Skipped</th>
+<th>Total</th>
+</tr></thead>
+<tbody><tr>
+<td>45</td>
+<td>2</td>
+<td>0</td>
+<td>47</td>
+</tr></tbody>
+</table>
+</div>
+<div id="suite">
+<h2>Suite: cdb10-0.1-SNAPSHOT</h2>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>161 ms</td>
+<td>2018-03-06T06:03:58Z</td>
+<td>2018-03-06T06:03:58Z</td>
+</tr></tbody>
+</table>
+</div>
+<div id="tests">
+<div class="test">
+<h3>Test: CDB Structure</h3>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>11 ms</td>
+<td>2018-03-06T06:03:58Z</td>
+<td>2018-03-06T06:03:58Z</td>
+</tr></tbody>
+</table>
+<h4>Test Classes</h4>
+<p><em>No test classes applied in this run.</em></p>
+</div>
+<div class="test">
+<h3>Test: Metadata And Versioning</h3>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>149 ms</td>
+<td>2018-03-06T06:03:58Z</td>
+<td>2018-03-06T06:03:58Z</td>
+</tr></tbody>
+</table>
+<h4>Test Classes</h4>
+<div class="test-class">
+<h4>org.opengis.cite.cdb10.metadataAndVersioning.VersionXmlStructureTests</h4>
+<div class="test-method PASS">
+<h5>initCommonFixture: PASS</h5>
+<p class="signature">Signature: initCommonFixture(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VersionXmlStructureTests@57aabb39]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method FAIL">
+<h5>obtainTestSubject: FAIL</h5>
+<p class="signature">Signature: obtainTestSubject(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VersionXmlStructureTests@57aabb39]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Conformance level 2 will not be checked since ics = 1 expected [true] but found [false]
+            </p>
+</div>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VersionXmlStructureTests@57aabb39]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyVersionXmlAgainstSchema: SKIP</h5>
+<p class="signature">Signature: verifyVersionXmlAgainstSchema()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VersionXmlStructureTests@57aabb39]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyVersionXmlFileExists: SKIP</h5>
+<p class="signature">Signature: verifyVersionXmlFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VersionXmlStructureTests@57aabb39]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VersionXmlStructureTests@57aabb39]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VersionXmlStructureTests@57aabb39]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyVersionXmlHasSpecificationElement: SKIP</h5>
+<p class="signature">Signature: verifyVersionXmlHasSpecificationElement()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VersionXmlStructureTests@57aabb39]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VersionXmlStructureTests@57aabb39]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyVersionXmlSpecificationVersionIsValid: SKIP</h5>
+<p class="signature">Signature: verifyVersionXmlSpecificationVersionIsValid()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VersionXmlStructureTests@57aabb39]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>1 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+</div>
+<div class="test-class">
+<h4>org.opengis.cite.cdb10.metadataAndVersioning.GeomaticsAttributesXmlStructureTests</h4>
+<div class="test-method PASS">
+<h5>initCommonFixture: PASS</h5>
+<p class="signature">Signature: initCommonFixture(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.GeomaticsAttributesXmlStructureTests@65ceb7ea]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method FAIL">
+<h5>obtainTestSubject: FAIL</h5>
+<p class="signature">Signature: obtainTestSubject(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.GeomaticsAttributesXmlStructureTests@65ceb7ea]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Conformance level 2 will not be checked since ics = 1 expected [true] but found [false]
+            </p>
+</div>
+</div>
+<div class="test-method SKIP">
+<h5>verifyGeomaticsAttributesXmlAgainstSchema: SKIP</h5>
+<p class="signature">Signature: verifyGeomaticsAttributesXmlAgainstSchema()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.GeomaticsAttributesXmlStructureTests@65ceb7ea]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.GeomaticsAttributesXmlStructureTests@65ceb7ea]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.GeomaticsAttributesXmlStructureTests@65ceb7ea]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyGeomaticsAttributesXmlFileExists: SKIP</h5>
+<p class="signature">Signature: verifyGeomaticsAttributesXmlFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.GeomaticsAttributesXmlStructureTests@65ceb7ea]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.GeomaticsAttributesXmlStructureTests@65ceb7ea]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyGeomaticsAttributesXsdFileExists: SKIP</h5>
+<p class="signature">Signature: verifyGeomaticsAttributesXsdFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.GeomaticsAttributesXmlStructureTests@65ceb7ea]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+</div>
+<div class="test-class">
+<h4>org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests</h4>
+<div class="test-method PASS">
+<h5>initCommonFixture: PASS</h5>
+<p class="signature">Signature: initCommonFixture(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>1 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>checkFilesExist: SKIP</h5>
+<p class="signature">Signature: checkFilesExist()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method FAIL">
+<h5>obtainTestSubject: FAIL</h5>
+<p class="signature">Signature: obtainTestSubject(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Conformance level 2 will not be checked since ics = 1 expected [true] but found [false]
+            </p>
+</div>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsTuningXsdFFileExists: SKIP</h5>
+<p class="signature">Signature: verifyLightsTuningXsdFFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXmlFileNameIsValid: SKIP</h5>
+<p class="signature">Signature: verifyLightsXmlFileNameIsValid()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>1 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXxxXmlAgainstSchema: SKIP</h5>
+<p class="signature">Signature: verifyLightsXxxXmlAgainstSchema()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXxxXmlColorIsInRange: SKIP</h5>
+<p class="signature">Signature: verifyLightsXxxXmlColorIsInRange()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXxxXmlDirectionalityValueIsValid: SKIP</h5>
+<p class="signature">Signature: verifyLightsXxxXmlDirectionalityValueIsValid()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXxxXmlElementDuty_CycleIsInRange: SKIP</h5>
+<p class="signature">Signature: verifyLightsXxxXmlElementDuty_CycleIsInRange()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXxxXmlElementIntensityIsInRange: SKIP</h5>
+<p class="signature">Signature: verifyLightsXxxXmlElementIntensityIsInRange()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXxxXmlElementResidualIntensityIsInRange: SKIP</h5>
+<p class="signature">Signature: verifyLightsXxxXmlElementResidualIntensityIsInRange()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXxxXmlFrequencyValueIsValid: SKIP</h5>
+<p class="signature">Signature: verifyLightsXxxXmlFrequencyValueIsValid()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLights_XxxXmlFileExists: SKIP</h5>
+<p class="signature">Signature: verifyLights_XxxXmlFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXxxXmlStructureTests@19290b6f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+</div>
+<div class="test-class">
+<h4>org.opengis.cite.cdb10.metadataAndVersioning.VendorAttributesXmlStructureTests</h4>
+<div class="test-method FAIL">
+<h5>obtainTestSubject: FAIL</h5>
+<p class="signature">Signature: obtainTestSubject(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VendorAttributesXmlStructureTests@1358d955]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Conformance level 2 will not be checked since ics = 1 expected [true] but found [false]
+            </p>
+</div>
+</div>
+<div class="test-method PASS">
+<h5>initCommonFixture: PASS</h5>
+<p class="signature">Signature: initCommonFixture(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VendorAttributesXmlStructureTests@1358d955]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method SKIP">
+<h5>verifyVendorAttributesXmlAgainstSchema: SKIP</h5>
+<p class="signature">Signature: verifyVendorAttributesXmlAgainstSchema()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VendorAttributesXmlStructureTests@1358d955]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VendorAttributesXmlStructureTests@1358d955]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyVendorAttributesXmlFileExists: SKIP</h5>
+<p class="signature">Signature: verifyVendorAttributesXmlFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VendorAttributesXmlStructureTests@1358d955]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VendorAttributesXmlStructureTests@1358d955]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VendorAttributesXmlStructureTests@1358d955]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyVendorAttributesXsdFileExists: SKIP</h5>
+<p class="signature">Signature: verifyVendorAttributesXsdFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.VendorAttributesXmlStructureTests@1358d955]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+</div>
+<div class="test-class">
+<h4>org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests</h4>
+<div class="test-method PASS">
+<h5>initCommonFixture: PASS</h5>
+<p class="signature">Signature: initCommonFixture(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>18 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method FAIL">
+<h5>obtainTestSubject: FAIL</h5>
+<p class="signature">Signature: obtainTestSubject(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Conformance level 2 will not be checked since ics = 1 expected [true] but found [false]
+            </p>
+</div>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyDefaultsXmlAgainstSchema: SKIP</h5>
+<p class="signature">Signature: verifyDefaultsXmlAgainstSchema()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyDefaultsXmlElementR_W_TypeHasValidValues: SKIP</h5>
+<p class="signature">Signature: verifyDefaultsXmlElementR_W_TypeHasValidValues()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyDefaultsXmlElementTypeHasValidValue: SKIP</h5>
+<p class="signature">Signature: verifyDefaultsXmlElementTypeHasValidValue()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyDefaultsXmlFileExists: SKIP</h5>
+<p class="signature">Signature: verifyDefaultsXmlFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyDefaultsXmlNameIsUniqueForEachDataset: SKIP</h5>
+<p class="signature">Signature: verifyDefaultsXmlNameIsUniqueForEachDataset()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.DefaultsXmlStructureTests@46d52852]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+</div>
+<div class="test-class">
+<h4>org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests</h4>
+<div class="test-method PASS">
+<h5>initCommonFixture: PASS</h5>
+<p class="signature">Signature: initCommonFixture(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method FAIL">
+<h5>obtainTestSubject: FAIL</h5>
+<p class="signature">Signature: obtainTestSubject(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Conformance level 2 will not be checked since ics = 1 expected [true] but found [false]
+            </p>
+</div>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyCDBAttributesXmlAgainstSchema: SKIP</h5>
+<p class="signature">Signature: verifyCDBAttributesXmlAgainstSchema()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyCDBAttributesXmlCodeIsAnInteger: SKIP</h5>
+<p class="signature">Signature: verifyCDBAttributesXmlCodeIsAnInteger()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyCDBAttributesXmlFileExists: SKIP</h5>
+<p class="signature">Signature: verifyCDBAttributesXmlFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyCDBAttributesXmlScalerCodeIsValid: SKIP</h5>
+<p class="signature">Signature: verifyCDBAttributesXmlScalerCodeIsValid()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyCDBAttributesXmlSymbolIsUnique: SKIP</h5>
+<p class="signature">Signature: verifyCDBAttributesXmlSymbolIsUnique()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyCDBAttributesXmlUnitCodeIsValid: SKIP</h5>
+<p class="signature">Signature: verifyCDBAttributesXmlUnitCodeIsValid()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyCDBAttributesXmlValueHasAValidType: SKIP</h5>
+<p class="signature">Signature: verifyCDBAttributesXmlValueHasAValidType()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.CDBAttributesXmlStructureTests@e0dd75f]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+</div>
+<div class="test-class">
+<h4>org.opengis.cite.cdb10.metadataAndVersioning.ModelComponentsXmlStructureTests</h4>
+<div class="test-method FAIL">
+<h5>obtainTestSubject: FAIL</h5>
+<p class="signature">Signature: obtainTestSubject(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ModelComponentsXmlStructureTests@184662c4]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Conformance level 2 will not be checked since ics = 1 expected [true] but found [false]
+            </p>
+</div>
+</div>
+<div class="test-method PASS">
+<h5>initCommonFixture: PASS</h5>
+<p class="signature">Signature: initCommonFixture(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ModelComponentsXmlStructureTests@184662c4]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ModelComponentsXmlStructureTests@184662c4]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyModelComponentsXmlAgainstSchema: SKIP</h5>
+<p class="signature">Signature: verifyModelComponentsXmlAgainstSchema()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ModelComponentsXmlStructureTests@184662c4]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyModelComponentsXmlFileExists: SKIP</h5>
+<p class="signature">Signature: verifyModelComponentsXmlFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ModelComponentsXmlStructureTests@184662c4]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ModelComponentsXmlStructureTests@184662c4]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+</div>
+<div class="test-class">
+<h4>org.opengis.cite.cdb10.metadataAndVersioning.LightsXmlStructureTests</h4>
+<div class="test-method PASS">
+<h5>initCommonFixture: PASS</h5>
+<p class="signature">Signature: initCommonFixture(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXmlStructureTests@3b7465a]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>1 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method FAIL">
+<h5>obtainTestSubject: FAIL</h5>
+<p class="signature">Signature: obtainTestSubject(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXmlStructureTests@3b7465a]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Conformance level 2 will not be checked since ics = 1 expected [true] but found [false]
+            </p>
+</div>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXmlStructureTests@3b7465a]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXmlStructureTests@3b7465a]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXmlCodesAreWithinRange: SKIP</h5>
+<p class="signature">Signature: verifyLightsXmlCodesAreWithinRange()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXmlStructureTests@3b7465a]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXmlStructureTests@3b7465a]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXmlFileAgainstSchema: SKIP</h5>
+<p class="signature">Signature: verifyLightsXmlFileAgainstSchema()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXmlStructureTests@3b7465a]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXmlFileExists: SKIP</h5>
+<p class="signature">Signature: verifyLightsXmlFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXmlStructureTests@3b7465a]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyLightsXmlHasUniqueCodes: SKIP</h5>
+<p class="signature">Signature: verifyLightsXmlHasUniqueCodes()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXmlStructureTests@3b7465a]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.LightsXmlStructureTests@3b7465a]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+</div>
+<div class="test-class">
+<h4>org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests</h4>
+<div class="test-method PASS">
+<h5>initCommonFixture: PASS</h5>
+<p class="signature">Signature: initCommonFixture(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method FAIL">
+<h5>obtainTestSubject: FAIL</h5>
+<p class="signature">Signature: obtainTestSubject(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Conformance level 2 will not be checked since ics = 1 expected [true] but found [false]
+            </p>
+</div>
+</div>
+<div class="test-method SKIP">
+<h5>verifyMaterialsXmlAgainstSchema: SKIP</h5>
+<p class="signature">Signature: verifyMaterialsXmlAgainstSchema()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyMaterialsXmlAllBaseMaterialElementsHaveAChildNodeName: SKIP</h5>
+<p class="signature">Signature: verifyMaterialsXmlAllBaseMaterialElementsHaveAChildNodeName()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyMaterialsXmlBaseMaterialNameIsValid: SKIP</h5>
+<p class="signature">Signature: verifyMaterialsXmlBaseMaterialNameIsValid()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyMaterialsXmlElementNameIsUnique: SKIP</h5>
+<p class="signature">Signature: verifyMaterialsXmlElementNameIsUnique()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyMaterialsXmlFileExists: SKIP</h5>
+<p class="signature">Signature: verifyMaterialsXmlFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MaterialsXmlStructureTests@62b6bb33]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+</div>
+<div class="test-class">
+<h4>org.opengis.cite.cdb10.metadataAndVersioning.MetadataStructureTests</h4>
+<div class="test-method PASS">
+<h5>initCommonFixture: PASS</h5>
+<p class="signature">Signature: initCommonFixture(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MetadataStructureTests@577b57a3]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>1 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method FAIL">
+<h5>verifyContentsOfSchemaFolder: FAIL</h5>
+<p class="signature">Signature: verifyContentsOfSchemaFolder()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MetadataStructureTests@577b57a3]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>16 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Schema folder is missing these files: [Base_Material_Table.xsd, Composite_Material_Table.xsd, Configuration.xsd, Defaults.xsd, DIS_Country_Codes.xsd, Feature_Data_Dictionary.xsd, Lights.xsd, Lights_Tuning.xsd, Model_Components.xsd, Model_Metadata.xsd, Moving_Model_Codes.xsd, OpenFlight_Model_Extensions.xsd, Vector_Attributes.xsd, Version.xsd] expected [true] but found [false]
+            </p>
+</div>
+</div>
+<div class="test-method PASS">
+<h5>obtainTestSubject: PASS</h5>
+<p class="signature">Signature: obtainTestSubject(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MetadataStructureTests@577b57a3]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method PASS">
+<h5>clearMessages: PASS</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MetadataStructureTests@577b57a3]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method PASS">
+<h5>clearMessages: PASS</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MetadataStructureTests@577b57a3]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>1 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method FAIL">
+<h5>verifyMetaDataFoldersExist: FAIL</h5>
+<p class="signature">Signature: verifyMetaDataFoldersExist()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.MetadataStructureTests@577b57a3]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>4 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Metadata should contain Schema folder. expected [true] but found [false]
+            </p>
+</div>
+</div>
+</div>
+<div class="test-class">
+<h4>org.opengis.cite.cdb10.metadataAndVersioning.ConfigurationXmlStructureTests</h4>
+<div class="test-method PASS">
+<h5>initCommonFixture: PASS</h5>
+<p class="signature">Signature: initCommonFixture(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ConfigurationXmlStructureTests@544bbff1]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>1 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+</div>
+<div class="test-method FAIL">
+<h5>obtainTestSubject: FAIL</h5>
+<p class="signature">Signature: obtainTestSubject(org.testng.ITestContext)[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ConfigurationXmlStructureTests@544bbff1]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<table class="parameters">
+<thead><tr><th>Parameters</th></tr></thead>
+<tbody><tr><td>
+                org.testng.TestRunner@aa1c3ae
+              </td></tr></tbody>
+</table>
+<div class="exception">
+<h4>EXCEPTION</h4>
+<p class="exception-class">java.lang.AssertionError</p>
+<p>
+              Conformance level 2 will not be checked since ics = 1 expected [true] but found [false]
+            </p>
+</div>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ConfigurationXmlStructureTests@544bbff1]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyConfigurationXmlAgainstSchema: SKIP</h5>
+<p class="signature">Signature: verifyConfigurationXmlAgainstSchema()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ConfigurationXmlStructureTests@544bbff1]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>clearMessages: SKIP</h5>
+<p class="signature">Signature: clearMessages()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ConfigurationXmlStructureTests@544bbff1]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+<div class="test-method SKIP">
+<h5>verifyConfigurationXmlFileExists: SKIP</h5>
+<p class="signature">Signature: verifyConfigurationXmlFileExists()[pri:0, instance:org.opengis.cite.cdb10.metadataAndVersioning.ConfigurationXmlStructureTests@544bbff1]</p>
+<table class="timings">
+<thead><tr>
+<th>Duration</th>
+<th>Start Time</th>
+<th>Finish Time</th>
+</tr></thead>
+<tbody><tr>
+<td>0 ms</td>
+<td>2018-03-05T23:03:58Z</td>
+<td>2018-03-05T23:03:58Z</td>
+</tr></tbody>
+</table>
+<p><em>No parameters for test method.</em></p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
