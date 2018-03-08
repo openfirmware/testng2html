@@ -1,25 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html" encoding="UTF-8" indent="yes" />
 <xsl:template match="/">
+  <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
   <html>
     <head>
       <title>TestNG Results</title>
       <style>
+        body {
+          background-color: #999;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+          font-family: sans-serif;
+        }
+
+        body > div {
+          margin: 0 auto;
+          max-width: 960px;
+          background-color: #FFF;
+          padding: 1em;
+        }
+
+        table {
+          border-spacing: 0;
+          border: 0;
+        }
+
+        table th, table td {
+          padding: 0.2em 0.5em;
+        }
+
+        table.test-results {
+          width: 100%;
+        }
+
+        table.test-results td {
+          text-align: right;
+        }
+
+        table.test-results col.passed {
+          background-color: GreenYellow;
+        }
+
+        table.test-results col.failed {
+          background-color: LightCoral;
+        }
+
+        table.test-results col.skipped {
+          background-color: LightYellow;
+        }
+
+        table.test-results col.total {
+          background-color: LightSteelBlue;
+        }
+
         table.timings {
           font-size: 0.8em;
+          width: 50%;
+        }
+
+        table.timings td {
+          text-align: right;
+        }
+
+        div.test {
+          padding: 1em;
+          background-color: #EEE;
+          border-bottom: 1px solid #000;
+        }
+
+        div.test-class {
+          padding: 1em;
+          margin-bottom: 1em;
+          background-color: #FAFAFA;
+          border-bottom: 1px solid #000;
+        }
+
+        div.test-method {
+          padding: 1em;
+          margin-bottom: 1em;
+          background-color: #FDFDFD;
+          border-bottom: 1px solid #000;
+        }
+
+        div.test-method.PASS {
+          background-color: #EAFDEA;
+        }
+
+        div.test-method.FAIL {
+          background-color: #FDEAEA;
+        }
+
+        div.test-method.SKIP {
+          background-color: #FDFDEA;
         }
 
         .signature {
           font-size: 0.8em;
+          font-family: monospace;
           color: #555;
+        }
+
+        table.parameters td {
+          font-family: monospace;
+        }
+
+        div.exception {
+          margin: 1em 0;
+          padding: 1em;
+          border: 3px solid red;
+        }
+
+        .exception-class {
+          font-family: monospace;
         }
       </style>
     </head>
   <body>
     <div id="master">
       <h1>TestNG Results</h1>
-      <table>
+      <table class="test-results">
+        <colgroup>
+          <col class="passed" />
+          <col class="failed" />
+          <col class="skipped" />
+          <col class="total" />
+        </colgroup>
         <thead>
           <tr>
             <th>Passed</th>
@@ -40,9 +147,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </div>
 
     <div id="suite">
-      <h3>Suite: <xsl:value-of select="testng-results/suite/@name" /></h3>
+      <h2>Suite: <xsl:value-of select="testng-results/suite/@name" /></h2>
 
-      <h4>Table: Suite Details</h4>
       <table class="timings">
         <thead>
           <tr>
@@ -66,7 +172,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <div class="test">
           <h3>Test: <xsl:value-of select="@name" /></h3>
 
-          <h4>Table: Test Details</h4>
           <table class="timings">
             <thead>
               <tr>
@@ -88,7 +193,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
           <xsl:choose>
             <xsl:when test="count(class) = 0">
-              <p>No test classes applied in this run.</p>
+              <p><em>No test classes applied in this run.</em></p>
             </xsl:when>
 
             <xsl:otherwise>
@@ -98,12 +203,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
                   <xsl:choose>
                     <xsl:when test="count(test-method) = 0">
-                      <p>No test methods applied in this run.</p>
+                      <p><em>No test methods applied in this run.</em></p>
                     </xsl:when>
 
                     <xsl:otherwise>
                       <xsl:for-each select="test-method">
-                        <div class="test-method">
+                        <xsl:variable name="status"><xsl:value-of select="@status" /></xsl:variable>
+
+                        <div class="test-method {$status}">
                           <h5><xsl:value-of select="@name" />: <xsl:value-of select="@status" /></h5>
                           <p class="signature">Signature: <xsl:value-of select="@signature" /></p>
 
@@ -128,7 +235,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                           <!-- Parameters -->
                           <xsl:choose>
                             <xsl:when test="count(params/param) = 0">
-                              <p>No parameters for test method.</p>
+                              <p><em>No parameters for test method.</em></p>
                             </xsl:when>
 
                             <xsl:otherwise>
@@ -151,9 +258,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
                           <!-- Exceptions -->
                           <xsl:if test="count(exception) > 0">
-                            <h4>EXCEPTION</h4>
-                            <p><xsl:value-of select="exception/@class" /></p>
-                            <p><xsl:value-of select="exception/message" /></p>
+                            <div class="exception">
+                              <h4>EXCEPTION</h4>
+                              <p class="exception-class"><xsl:value-of select="exception/@class" /></p>
+                              <p><xsl:value-of select="exception/message" /></p>
+                            </div>
                           </xsl:if>
                         </div>
                       </xsl:for-each>
