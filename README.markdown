@@ -8,7 +8,7 @@ The conversion is done using an XSLT file. Different XSLT files will produce dif
 
 ### Simple HTML Output
 
-This outputs a single HTML 5 file with embedded CSS information. There is no JavaScript functionality. An example output is in the `examples/simple.html` file.
+This outputs a single HTML 5 file with embedded CSS information. There is no JavaScript functionality. An example output is in the [examples/simple.html](examples/simple.html) file.
 
 Here is how to use it with `xsltproc`.
 
@@ -18,7 +18,7 @@ $ xsltproc simple.xsl input.xml > simple.html
 
 ### Filtering HTML Output
 
-This outputs a single HTML 5 file with embedded CSS and JavaScript. It links to an internet copy of JQuery to keep the filtering code simplified. An example output is in the `examples/filter.html` file.
+This outputs a single HTML 5 file with embedded CSS and JavaScript. It links to an internet copy of JQuery to keep the filtering code simplified. An example output is in the [examples/filter.html](examples/filter.html) file.
 
 Here is how to use it with `xsltproc`.
 
