@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TestNG2HTML</title>
+  <style>
+    body {
+      background-color: #554488;
+      margin: 0;
+      padding: 0;
+    }
+
+    #main {
+      margin: 0 auto;
+      max-width: 960px;
+      background-color: #ABB;
+      padding: 1em;
+      border: 1px solid #000;
+      border-top: 0;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div id="main">
+  <h1>TestNG2HTML</h1>
+  <p>Convert TestNG XML reports into HTML.</p>
+
+  <p><a href="https://github.com/openfirmware/testng2html">Code on GitHub</a>.</p>
+
+  <h2>Usage</h2>
+  <p>The conversion is done using an XSLT file. Different XSLT files will produce different output. Choose the output type that works for you. These XSLT files require an <a href="https://en.wikipedia.org/wiki/XSLT#Processor_implementations">XSLT processor tool</a>.</p>
+
+  <h3>Simple HTML Output</h3>
+  <p>This outputs a single HTML 5 file with embedded CSS information. There is no JavaScript functionality. An example output is in the <code><a href="examples/simple.html">examples/simple.html</a></code> file.</p>
+
+  <p>Here is how to use it with <code>xsltproc</code>.</p>
+
+  <pre>
+  $ xsltproc simple.xsl input.xml > simple.html
+  </pre>
+
+  <h3>Filtering HTML Output</h3>
+  <p>This outputs a single HTML 5 file with embedded CSS and JavaScript. It links to an internet copy of JQuery to keep the filtering code simplified. An example output is in the <code><a href="examples/filter.html">examples/filter.html</a></code> file.</p>
+
+  <p>Here is how to use it with <code>xsltproc</code>.</p>
+
+  <pre>
+  $ xsltproc filter.xsl input.xml > filter.html
+  </pre>
+
+  <h2>License</h2>
+
+  <p>MIT License.</p>
+</div>
+</body>
+</html>
