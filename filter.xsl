@@ -155,9 +155,9 @@
         </thead>
         <tbody>
           <tr>
-            <td><xsl:value-of select="testng-results/@skipped" /></td>
-            <td><xsl:value-of select="testng-results/@failed" /></td>
             <td><xsl:value-of select="testng-results/@passed" /></td>
+            <td><xsl:value-of select="testng-results/@failed" /></td>
+            <td><xsl:value-of select="testng-results/@skipped" /></td>
             <td><xsl:value-of select="testng-results/@total" /></td>
           </tr>
         </tbody>
