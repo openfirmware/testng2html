@@ -111,11 +111,45 @@
         .exception-class {
           font-family: monospace;
         }
+
+        div#result-graph {
+          width: 100%;
+          height: 3em;
+          display: flex;
+          margin-bottom: 1em;
+          border: 1px solid #AAA;
+        }
+
+        div#result-graph * {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        div#result-graph .passed {
+          background-color: #EAFDEA;
+          width: 0%;
+        }
+
+        div#result-graph .failed {
+          background-color: #FDEAEA;
+          width: 4.25531914893617%;
+        }
+
+        div#result-graph .skipped {
+          background-color: #FDFDEA;
+          width: 95.7446808510638%;
+        }
       </style>
 </head>
 <body>
 <div id="master">
 <h1>TestNG Results</h1>
+<div id="result-graph">
+<div class="passed"></div>
+<div class="failed"></div>
+<div class="skipped"></div>
+</div>
 <table class="test-results">
 <colgroup>
 <col class="passed">
@@ -130,9 +164,9 @@
 <th>Total</th>
 </tr></thead>
 <tbody><tr>
-<td>45</td>
-<td>2</td>
 <td>0</td>
+<td>2</td>
+<td>45</td>
 <td>47</td>
 </tr></tbody>
 </table>

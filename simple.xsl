@@ -115,11 +115,47 @@
         .exception-class {
           font-family: monospace;
         }
+
+        div#result-graph {
+          width: 100%;
+          height: 3em;
+          display: flex;
+          margin-bottom: 1em;
+          border: 1px solid #AAA;
+        }
+
+        div#result-graph * {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        div#result-graph .passed {
+          background-color: #EAFDEA;
+          width: <xsl:value-of select="100 * testng-results/@passed div testng-results/@total" />%;
+        }
+
+        div#result-graph .failed {
+          background-color: #FDEAEA;
+          width: <xsl:value-of select="100 * testng-results/@failed div testng-results/@total" />%;
+        }
+
+        div#result-graph .skipped {
+          background-color: #FDFDEA;
+          width: <xsl:value-of select="100 * testng-results/@skipped div testng-results/@total" />%;
+        }
       </style>
     </head>
   <body>
     <div id="master">
       <h1>TestNG Results</h1>
+
+      <div id="result-graph">
+        <div class="passed"></div>
+        <div class="failed"></div>
+        <div class="skipped"></div>
+      </div>
+
       <table class="test-results">
         <colgroup>
           <col class="passed" />
@@ -137,9 +173,9 @@
         </thead>
         <tbody>
           <tr>
-            <td><xsl:value-of select="testng-results/@skipped" /></td>
-            <td><xsl:value-of select="testng-results/@failed" /></td>
             <td><xsl:value-of select="testng-results/@passed" /></td>
+            <td><xsl:value-of select="testng-results/@failed" /></td>
+            <td><xsl:value-of select="testng-results/@skipped" /></td>
             <td><xsl:value-of select="testng-results/@total" /></td>
           </tr>
         </tbody>
