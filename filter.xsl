@@ -281,7 +281,7 @@
                               <div class="exception">
                                 <h4>EXCEPTION</h4>
                                 <p class="exception-class"><xsl:value-of select="exception/@class" /></p>
-                                <p><xsl:value-of select="exception/message" /></p>
+                                <pre><xsl:value-of select="exception/message" /></pre>
                               </div>
                             </xsl:if>
                           </div>
